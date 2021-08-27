@@ -1,1 +1,4 @@
-export const fibonacchi = (integer: number) => { return 0 }
+export const fibonacchi = (integer: number): number => {
+  if (integer === 0) return 0
+  return 1
+}
