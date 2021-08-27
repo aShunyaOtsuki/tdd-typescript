@@ -1,6 +1,15 @@
 import { fibonacchi } from './index'
 
-test('fibonacchi', () => {
-  expect(fibonacchi(0)).toStrictEqual(0)
-  expect(fibonacchi(1)).toStrictEqual(1)
+const testCase = [
+  //[input, expected]
+  [0, 0],
+  [1, 1],
+  [2, 1],
+  [3, 2],
+  [4, 3],
+  [5, 5]
+]
+
+test.each(testCase)('fibonacchi', (input, expected) => {
+  expect(fibonacchi(input)).toStrictEqual(expected)
 })
