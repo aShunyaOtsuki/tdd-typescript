@@ -6,7 +6,8 @@
   "author": "aShunyaOtuski <shunya.otsuki@access-company.com>",
   "license": "MIT",
   "scripts": {
-    "fibonacchi": "yarn tsc fibonacci/index.ts && node fibonacci/index.js"
+    "fibonacchi": "yarn tsc fibonacci/index.ts && node fibonacci/index.js",
+    "test": "yarn tsc fibonacci_tdd/index.ts fibonacci_tdd/index.test.ts && yarn jest fibonacci_tdd/index.test.js"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",
