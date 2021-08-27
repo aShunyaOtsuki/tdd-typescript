@@ -1,0 +1,1 @@
+export const fibonacchi = (integer: number) => { return 0 }
